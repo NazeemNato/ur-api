@@ -18,7 +18,7 @@ export const brokerController = async (req: Request, res: Response) => {
         }
 
         (await connection).createChannel().then((channel) => {
-            channel.assertQueue("email-queue");
+            channel.assertQueue("queue");
             channel.sendToQueue(
                 "queue",
                 Buffer.from(JSON.stringify({ ...req.body }))
