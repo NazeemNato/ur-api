@@ -1,0 +1,37 @@
+{
+  "name": "ur-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazeemNato/ur-api.git"
+  },
+  "keywords": [],
+  "author": "Muhammed Nazeem <n4ze3m@gmail.com> (https://n4ze3m.site)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazeemNato/ur-api/issues"
+  },
+  "homepage": "https://github.com/NazeemNato/ur-api#readme",
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.8.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "tsc": "^2.0.3",
+    "typescript": "^4.5.4"
+  }
+}
